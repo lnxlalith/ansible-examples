@@ -3,7 +3,7 @@
   yum:
     name: "{{ item }}"
     state: present
-    become: yes
+   # become: yes
   with_items:
    - unzip
    - java-1.7.0-openjdk
