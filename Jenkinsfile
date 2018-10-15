@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'ansible-examples -i jboss-standalone jboss-standalone/site.yml -k'
+                sh 'ansible-playbook -i jboss-standalone jboss-standalone/site.yml -k'
             }
         }
         stage('Test') {
